@@ -12,6 +12,9 @@
     <img src="https://poggit.pmmp.io/ci.shield/Blugin/ChatThin-PMMP/ChatThin?style=flat-square">  
   </a>  
   <a href="https://github.com/Blugin/ChatThin-PMMP/releases">  
+    <img src="https://img.shields.io/github/release/Blugin/ChatThin-PMMP.svg?style=flat-square">  
+  </a>  
+  <a href="https://github.com/Blugin/ChatThin-PMMP/releases">  
     <img src="https://img.shields.io/github/downloads/Blugin/ChatThin-PMMP/total.svg?style=flat-square">  
   </a>  
   </a>  
