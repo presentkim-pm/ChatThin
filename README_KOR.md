@@ -3,7 +3,7 @@
 <a align="center"><img src="https://i.ibb.co/WgJLjbc/Chat-Thin-test-after.png"></a>  
 <h1 align="center"> ChatThin :: 모든 채팅 메시지를 얇게 만듭니다 </h1>  
 <p align="right">  
-  <a href="./README_KOR.md">  
+  <a href="./README.md">  
     <img src="https://img.shields.io/static/v1?label=read%20in&message=English&color=success">  
   </a>
 </p>  
