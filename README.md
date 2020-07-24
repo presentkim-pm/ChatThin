@@ -50,6 +50,6 @@
 <br>  
   
 ## 🔧 How to install?  
-1) [Download](https://github.com/Blugin/libSubcommands-PMMP/releases) from releases
+1) [Download](https://github.com/Blugin/ChatThin-PMMP/releases) from releases
 2) Move dowloaded `.phar` file to your server's **/plugins/** folder  
 3) Restart the server (or execute `/reload` command)  
