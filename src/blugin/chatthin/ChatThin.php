@@ -28,10 +28,29 @@ declare(strict_types=1);
 namespace blugin\chatthin;
 
 use pocketmine\event\Listener;
+use pocketmine\event\server\DataPacketSendEvent;
+use pocketmine\network\mcpe\protocol\TextPacket;
 use pocketmine\plugin\PluginBase;
+use pocketmine\utils\TextFormat;
 
 class ChatThin extends PluginBase implements Listener{
+    public const THIN_TAG = TextFormat::ESCAPE . "ʹ";
+
     public function onEnable() : void{
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
+    }
+
+    /**
+     * @priority HIGHEST
+     *
+     * @param DataPacketSendEvent $event
+     */
+    public function onDataPacketSendEvent(DataPacketSendEvent $event) : void{
+        foreach($event->getPackets() as $_ => $pk){
+            if(!$pk instanceof TextPacket || $pk->type === TextPacket::TYPE_TIP || $pk->type === TextPacket::TYPE_POPUP || $pk->type === TextPacket::TYPE_JUKEBOX_POPUP)
+                continue;
+
+            $pk->message .= self::THIN_TAG;
+        }
     }
 }
