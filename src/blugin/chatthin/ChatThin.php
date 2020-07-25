@@ -34,7 +34,7 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\utils\TextFormat;
 
 class ChatThin extends PluginBase implements Listener{
-    public const THIN_TAG = TextFormat::ESCAPE . "ʹ";
+    public const THIN_TAG = TextFormat::ESCAPE . "　";
 
     public function onEnable() : void{
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
