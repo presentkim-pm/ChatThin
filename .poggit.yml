@@ -5,4 +5,5 @@ branches:
 projects:
   ChatThin:
     path: ""
+    icon: "icon.png"
 ...
