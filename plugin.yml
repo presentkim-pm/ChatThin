@@ -1,7 +1,7 @@
 ---
 name: ChatThin
 main: blugin\chatthin\ChatThin
-version: 1.0.0
+version: 1.0.1
 api: [3.0.0]
 authors: ['Blugin-team', 'PresentKim']
 description: Makes all chat message look thin
