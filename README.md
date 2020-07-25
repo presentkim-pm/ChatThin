@@ -22,15 +22,14 @@
   <br> ✔️ Makes chat message look thin (Always appear to contain Unicode)  
   <br> ✔️ This feature applies to all message, whether from player or plugins or server
 </p>  
-   
-<br> 
+  
+<br>  
   
 ## :file_folder: Target software:  
 **This plugin officially only works with [Pocketmine-MP `API 3.x.x`](https://github.com/pmmp/PocketMine-MP/tree/stable)**
 > **If you use [**Pocketmine-MP** `API 4.x.x`](https://github.com/pmmp/PocketMine-MP/tree/master),**  
-> **You should get the latest 0.0.1 version**  
-> **This version does not go up explicitly**  
-> **Even if the plugin is updated, the release goes up to version 0.0.1 again**  
+> **You should get the latest 0.0.1 version. (This version does not go up explicitly)**  
+> **This version does not distribute plugin builds. You need to build from the source directly from the [`master`](https://github.com/Blugin/ChatThin-PMMP/tree/master) branch.**
   
 <br>  
   
@@ -43,13 +42,12 @@
   
 ## :package: Downloads:  
   
-| Version | Phar Download | Support 3.x.x | Support 4.x.x |  
-| :-----: | :-----------: | :-----------: | :-----------: |  
-| 0.0.1 | [GitHub](https://github.com/Blugin/ChatThin-PMMP/releases/download/0.0.1/ChatThin_v0.0.1.phar) | ❌ | ✔️ |  
-| 1.0.0 | [GitHub](https://github.com/Blugin/ChatThin-PMMP/releases/download/1.0.0/ChatThin_v1.0.0.phar) | ✔️ | ❌ |  
+| Version | Phar Download | Updates Note |  
+| :-----: | :-----------: | :----------: |  
+| 1.0.1 | [GitHub](https://github.com/Blugin/ChatThin-PMMP/releases/download/1.0.1/ChatThin_v1.0.1.phar) | **Resolved an issue not working with Noto sans font, [#1](https://github.com/Blugin/ChatThin-PMMP/issues/1)** |  
+| 1.0.0 | [GitHub](https://github.com/Blugin/ChatThin-PMMP/releases/download/1.0.0/ChatThin_v1.0.0.phar) | **Init plugin (Implements plugin features)** |  
   
 > **All released versions [here](https://github.com/Blugin/ChatThin-PMMP/releases)**  
-> **`0.0.1` version is means, this version is for PMMP API 4.0.0**  
   
 <br>  
   
