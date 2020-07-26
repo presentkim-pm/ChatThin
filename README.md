@@ -19,6 +19,9 @@
   <a href="https://github.com/Blugin/ChatThin-PMMP/blob/master/LICENSE">  
     <img src="https://img.shields.io/github/license/Blugin/ChatThin-PMMP.svg?style=flat-square">  
   </a>  
+  <a href="http://hits.dwyl.com/Blugin/ChatThin-PMMP">  
+    <img src="http://hits.dwyl.com/Blugin/ChatThin-PMMP.svg">  
+  </a>  
   <br> ✔️ Makes chat message look thin (Always appear to contain Unicode)  
   <br> ✔️ This feature applies to all message, whether from player or plugins or server
 </p>  

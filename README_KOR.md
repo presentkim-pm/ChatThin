@@ -19,6 +19,9 @@
   <a href="https://github.com/Blugin/ChatThin-PMMP/blob/master/LICENSE">  
     <img src="https://img.shields.io/github/license/Blugin/ChatThin-PMMP.svg?style=flat-square">  
   </a>  
+  <a href="http://hits.dwyl.com/Blugin/ChatThin-PMMP">  
+    <img src="http://hits.dwyl.com/Blugin/ChatThin-PMMP.svg">  
+  </a>  
   <br> ✔️ 채팅 메시지를 얇게 만듭니다 (항상 유니코드가 포함된 것처럼 표시됩니다)  
   <br> ✔️ 이 기능은 플레이어, 플러그인 또는 서버가 보내는 모든 메시지에 동일하게 적용됩니다  
 </p>  
