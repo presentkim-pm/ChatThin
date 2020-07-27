@@ -29,10 +29,8 @@
 <br>  
   
 ## :file_folder: Target software:  
-**This plugin officially only works with [Pocketmine-MP `API 3.x.x`](https://github.com/pmmp/PocketMine-MP/tree/stable)**
-> **If you use [**Pocketmine-MP** `API 4.x.x`](https://github.com/pmmp/PocketMine-MP/tree/master),**  
-> **You should get the latest 0.0.1 version. (This version does not go up explicitly)**  
-> **This version does not distribute plugin builds. You need to build from the source directly from the [`master`](https://github.com/Blugin/ChatThin-PMMP/tree/master) branch.**
+**This plugin officially works with [**Pocketmine-MP**](https://github.com/pmmp/PocketMine-MP/)**
+> Work on both API [`3.x.x`](https://github.com/pmmp/PocketMine-MP/tree/stable) [`4.x.x`](https://github.com/pmmp/PocketMine-MP/tree/master)  
   
 <br>  
   
@@ -45,10 +43,11 @@
   
 ## :package: Downloads:  
   
-| Version | Phar Download | Updates Note |  
-| :-----: | :-----------: | :----------: |  
-| 1.0.1 | [GitHub](https://github.com/Blugin/ChatThin-PMMP/releases/download/1.0.1/ChatThin_v1.0.1.phar) | **Resolved an issue not working with Noto sans font, [#1](https://github.com/Blugin/ChatThin-PMMP/issues/1)** |  
-| 1.0.0 | [GitHub](https://github.com/Blugin/ChatThin-PMMP/releases/download/1.0.0/ChatThin_v1.0.0.phar) | **Init plugin (Implements plugin features)** |  
+| Version | Phar Download | Updates Note | Support 3.x.x | Support 4.x.x |  
+| :-----: | :-----------: | :----------: | :-----------: | :-----------: |
+| 1.1.0 | [GitHub](https://github.com/Blugin/ChatThin-PMMP/releases/download/1.1.0/ChatThin_v1.1.0.phar) | **Support both 3.x.x and 4.x.x at once** | ✔️ | ✔️ |  
+| 1.0.1 | [GitHub](https://github.com/Blugin/ChatThin-PMMP/releases/download/1.0.1/ChatThin_v1.0.1.phar) | **Resolved an issue not working with Noto sans font, [#1](https://github.com/Blugin/ChatThin-PMMP/issues/1)** | ✔️ | ❌ |  
+| 1.0.0 | [GitHub](https://github.com/Blugin/ChatThin-PMMP/releases/download/1.0.0/ChatThin_v1.0.0.phar) | **Init plugin (Implements plugin features)** | ✔️ | ❌ |  
   
 > **All released versions [here](https://github.com/Blugin/ChatThin-PMMP/releases)**  
   
