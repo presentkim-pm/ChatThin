@@ -45,6 +45,7 @@
   
 | Version | Phar Download | Updates Note | Support 3.x.x | Support 4.x.x |  
 | :-----: | :-----------: | :----------: | :-----------: | :-----------: |
+| 1.1.1 | [GitHub](https://github.com/Blugin/ChatThin-PMMP/releases/download/1.1.1/ChatThin_v1.1.1.phar) | **번역 텍스트가 깨지는 오류 수정** | ✔️ | ✔️ |
 | 1.1.0 | [GitHub](https://github.com/Blugin/ChatThin-PMMP/releases/download/1.1.0/ChatThin_v1.1.0.phar) | **3.x.x와 4.x.x를 동시에 지원** | ✔️ | ✔️ |  
 | 1.0.1 | [GitHub](https://github.com/Blugin/ChatThin-PMMP/releases/download/1.0.1/ChatThin_v1.0.1.phar) | **`Noto sans` 글꼴에서 작동하지 않는 이슈 해결, [#1](https://github.com/Blugin/ChatThin-PMMP/issues/1)** | ✔️ | ❌ |  
 | 1.0.0 | [GitHub](https://github.com/Blugin/ChatThin-PMMP/releases/download/1.0.0/ChatThin_v1.0.0.phar) | **플러그인 게시 (플러그인 기능 구현)** | ✔️ | ❌ |  

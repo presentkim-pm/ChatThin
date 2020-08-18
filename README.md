@@ -45,6 +45,7 @@
   
 | Version | Phar Download | Updates Note | Support 3.x.x | Support 4.x.x |  
 | :-----: | :-----------: | :----------: | :-----------: | :-----------: |
+| 1.1.1 | [GitHub](https://github.com/Blugin/ChatThin-PMMP/releases/download/1.1.1/ChatThin_v1.1.1.phar) | **Fixed an error the translation text broken** | ✔️ | ✔️ |
 | 1.1.0 | [GitHub](https://github.com/Blugin/ChatThin-PMMP/releases/download/1.1.0/ChatThin_v1.1.0.phar) | **Support both 3.x.x and 4.x.x at once** | ✔️ | ✔️ |  
 | 1.0.1 | [GitHub](https://github.com/Blugin/ChatThin-PMMP/releases/download/1.0.1/ChatThin_v1.0.1.phar) | **Resolved an issue not working with Noto sans font, [#1](https://github.com/Blugin/ChatThin-PMMP/issues/1)** | ✔️ | ❌ |  
 | 1.0.0 | [GitHub](https://github.com/Blugin/ChatThin-PMMP/releases/download/1.0.0/ChatThin_v1.0.0.phar) | **Init plugin (Implements plugin features)** | ✔️ | ❌ |  
