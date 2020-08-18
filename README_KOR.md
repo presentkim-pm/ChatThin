@@ -55,8 +55,7 @@
 <br>  
   
 ## :space_invader: 데모  
- ![_](https://i.ibb.co/b1HDfVC/Chat-Thin-test-before.png)  
- ![_](https://i.ibb.co/WgJLjbc/Chat-Thin-test-after.png)  
+ [![_](https://i.ibb.co/x7qKRgf/Chat-Thin-demo.gif)](https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=6e028776-e173-11ea-bf88-a15b6c7adf9a)  
   
 <br>  
   
