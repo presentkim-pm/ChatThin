@@ -1,8 +1,9 @@
 ---
 name: ChatThin
-main: blugin\chatthin\
+main: blugin\chatthin\ChatThin
 version: 0.0.1
 api: [4.0.0]
 authors: ['Blugin-team', 'PresentKim']
 description: Makes all chat message look thin
+mcpe-protocol: [407, 408]
 ...
