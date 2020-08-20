@@ -1,13 +1,16 @@
-<a align="center"><img src="https://i.ibb.co/YpK1m9p/Chat-Thin-logo.png"></a>  
-# ChatThin :: 모든 채팅 메시지를 얇게 만듭니다  
+<p align="center"> <img src="https://ghcdn.rawgit.org/Blugin/ChatThin-PMMP/master/icon.png" width="360"> </p>  
+  
+# ChatThin  
+### 모든 채팅 메시지를 얇게 만듭니다  
 <p align="right">  
   <a href="https://github.com/Blugin/ChatThin-PMMP/blob/stable/README.md">  
     <img src="https://img.shields.io/static/v1?label=read%20in&message=English&color=success">
   </a>  
 </p>  
+
 [![poggit-build](https://poggit.pmmp.io/ci.shield/Blugin/ChatThin-PMMP/ChatThin?style=flat-square)](https://poggit.pmmp.io/ci/Blugin/ChatThin-PMMP/ChatThin)
 [![license](https://img.shields.io/github/license/Blugin/ChatThin-PMMP.svg?style=flat-square)](https://github.com/Blugin/ChatThin-PMMP/blob/master/LICENSE)
-[![hits](http://hits.dwyl.com/Blugin/ChatThin-PMMP.svg)](http://hits.dwyl.com/Blugin/ChatThin-PMMP)
+[![hits](http://hits.dwyl.com/Blugin/ChatThin-PMMP.svg)](http://hits.dwyl.com/Blugin/ChatThin-PMMP)    
   
 ✔️ 채팅 메시지를 얇게 만듭니다 (항상 유니코드가 포함된 것처럼 표시됩니다)  
 ✔️ 이 기능은 플레이어, 플러그인 또는 서버가 보내는 모든 메시지에 동일하게 적용됩니다  

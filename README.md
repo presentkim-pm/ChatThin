@@ -1,5 +1,7 @@
-<a align="center"><img src="https://i.ibb.co/YpK1m9p/Chat-Thin-logo.png"></a>  
-# ChatThin :: Makes all chat message look thin    
+<p align="center"> <img src="https://ghcdn.rawgit.org/Blugin/ChatThin-PMMP/master/icon.png" width="360"> </p>  
+
+# ChatThin  
+### Makes all chat message look thin  
 <p align="right">  
   <a href="https://github.com/Blugin/ChatThin-PMMP/blob/stable/README_KOR.md">  
     <img src="https://img.shields.io/static/v1?label=%ED%95%9C%EA%B5%AD%EC%96%B4&message=%EB%A1%9C+%EC%9D%BD%EA%B8%B0&labelColor=success">  
