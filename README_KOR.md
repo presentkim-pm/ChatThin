@@ -29,8 +29,10 @@
 <br> 
   
 ## :file_folder: 대상 소프트웨어: 
-**이 플러그인은 공식적으로 [**Pocketmine-MP**](https://github.com/pmmp/PocketMine-MP/)에서만 작동합니다**
-> API [`3.x.x`](https://github.com/pmmp/PocketMine-MP/tree/stable) [`4.x.x`](https://github.com/pmmp/PocketMine-MP/tree/master) 모두 작동합니다
+**이 플러그인은 공식적으로 [Pocketmine-MP `API 3.x.x`](https://github.com/pmmp/PocketMine-MP/tree/stable)에서만 작동합니다**
+> **만약 당신이 [**Pocketmine-MP** `API 4.x.x`](https://github.com/pmmp/PocketMine-MP/tree/master)을 사용한다면,**  
+> **최신 0.0.1 버전을 받아가야합니다. (이 버전은 명시 적으로 올라가지 않습니다)**  
+> **이 버전은 플러그인 빌드를 배포하지 않습니다. [`master`](https://github.com/Blugin/ChatThin-PMMP/tree/master) 브랜치에서 직접 소스를 빌드해야합니다.**
   
 <br>  
   
