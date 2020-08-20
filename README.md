@@ -28,6 +28,11 @@
   
 <br>  
   
+## :space_invader: Demo  
+ [![_](https://i.ibb.co/x7qKRgf/Chat-Thin-demo.gif)](https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=6e028776-e173-11ea-bf88-a15b6c7adf9a)  
+  
+<br>  
+  
 ## :file_folder: Target software:  
 **This plugin officially only works with [Pocketmine-MP `API 3.x.x`](https://github.com/pmmp/PocketMine-MP/tree/stable)**
 > **If you use [**Pocketmine-MP** `API 4.x.x`](https://github.com/pmmp/PocketMine-MP/tree/master),**  
@@ -40,11 +45,6 @@
 1) Download `.phar` from [poggit](https://poggit.pmmp.io/ci/Blugin/ChatThin-PMMP/ChatThin)  
 2) Move dowloaded `.phar` file to your server's **/plugins/** folder  
 3) Restart the server (or execute `/reload` command)  
-  
-<br>  
-  
-## :space_invader: Demo  
- [![_](https://i.ibb.co/x7qKRgf/Chat-Thin-demo.gif)](https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=6e028776-e173-11ea-bf88-a15b6c7adf9a)  
   
 <br>  
   

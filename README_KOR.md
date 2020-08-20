@@ -28,6 +28,11 @@
    
 <br> 
   
+## :space_invader: 데모  
+ [![_](https://i.ibb.co/x7qKRgf/Chat-Thin-demo.gif)](https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=6e028776-e173-11ea-bf88-a15b6c7adf9a)  
+  
+<br>  
+  
 ## :file_folder: 대상 소프트웨어: 
 **이 플러그인은 공식적으로 [Pocketmine-MP `API 3.x.x`](https://github.com/pmmp/PocketMine-MP/tree/stable) 에서만 작동합니다**
 > **만약 당신이 [**Pocketmine-MP** `API 4.x.x`](https://github.com/pmmp/PocketMine-MP/tree/master) 을 사용한다면,**  
@@ -40,11 +45,6 @@
 1) [Poggit](https://poggit.pmmp.io/ci/Blugin/ChatThin-PMMP/ChatThin) 에서 `.phar`을  받으세요  
 2) 다운받은 `.phar`파일을 당신의 서버의 **/plugins/** 폴더에 넣으세요  
 3) 서버를 재시작하세요 (혹은 `/reload` 명령어를 실행하세요)  
-  
-<br>  
-  
-## :space_invader: 데모  
- [![_](https://i.ibb.co/x7qKRgf/Chat-Thin-demo.gif)](https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=6e028776-e173-11ea-bf88-a15b6c7adf9a)  
   
 <br>  
   
