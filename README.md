@@ -1,30 +1,17 @@
 <a align="center"><img src="https://i.ibb.co/YpK1m9p/Chat-Thin-logo.png"></a>  
-<h1 align="center"> ChatThin :: Makes all chat message look thin </h1>  
+# ChatThin :: Makes all chat message look thin    
 <p align="right">  
   <a href="https://github.com/Blugin/ChatThin-PMMP/blob/stable/README_KOR.md">  
     <img src="https://img.shields.io/static/v1?label=%ED%95%9C%EA%B5%AD%EC%96%B4&message=%EB%A1%9C+%EC%9D%BD%EA%B8%B0&labelColor=success">  
   </a>  
-</p>  
-<p align="center">  
-  <a href="https://poggit.pmmp.io/ci/Blugin/ChatThin-PMMP/ChatThin">  
-    <img src="https://poggit.pmmp.io/ci.shield/Blugin/ChatThin-PMMP/ChatThin?style=flat-square">  
-  </a>  
-  <a href="https://github.com/Blugin/ChatThin-PMMP/releases">  
-    <img src="https://img.shields.io/github/release/Blugin/ChatThin-PMMP.svg?style=flat-square">  
-  </a>  
-  <a href="https://github.com/Blugin/ChatThin-PMMP/releases">  
-    <img src="https://img.shields.io/github/downloads/Blugin/ChatThin-PMMP/total.svg?style=flat-square">  
-  </a>  
-  </a>  
-  <a href="https://github.com/Blugin/ChatThin-PMMP/blob/master/LICENSE">  
-    <img src="https://img.shields.io/github/license/Blugin/ChatThin-PMMP.svg?style=flat-square">  
-  </a>  
-  <a href="http://hits.dwyl.com/Blugin/ChatThin-PMMP">  
-    <img src="http://hits.dwyl.com/Blugin/ChatThin-PMMP.svg">  
-  </a>  
-  <br> ✔️ Makes chat message look thin (Always appear to contain Unicode)  
-  <br> ✔️ This feature applies to all message, whether from player or plugins or server
-</p>  
+</p>
+    
+[![poggit-build](https://poggit.pmmp.io/ci.shield/Blugin/ChatThin-PMMP/ChatThin?style=flat-square)](https://poggit.pmmp.io/ci/Blugin/ChatThin-PMMP/ChatThin)
+[![license](https://img.shields.io/github/license/Blugin/ChatThin-PMMP.svg?style=flat-square)](https://github.com/Blugin/ChatThin-PMMP/blob/master/LICENSE)
+[![hits](http://hits.dwyl.com/Blugin/ChatThin-PMMP.svg)](http://hits.dwyl.com/Blugin/ChatThin-PMMP)
+  
+✔️ Makes chat message look thin (Always appear to contain Unicode)  
+✔️ This feature applies to all message, whether from player or plugins or server  
   
 <br>  
   
