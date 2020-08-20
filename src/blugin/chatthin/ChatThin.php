@@ -46,14 +46,13 @@ class ChatThin extends PluginBase implements Listener{
      * @param DataPacketSendEvent $event
      */
     public function onDataPacketSendEvent(DataPacketSendEvent $event) : void{
-        foreach($event->getPackets() as $_ => $pk){
-            if(!$pk instanceof TextPacket || $pk->type === TextPacket::TYPE_TIP || $pk->type === TextPacket::TYPE_POPUP || $pk->type === TextPacket::TYPE_JUKEBOX_POPUP)
-                continue;
+        $pk = $event->getPacket();
+        if(!$pk instanceof TextPacket || $pk->type === TextPacket::TYPE_TIP || $pk->type === TextPacket::TYPE_POPUP || $pk->type === TextPacket::TYPE_JUKEBOX_POPUP)
+            return;
 
-            if($pk->type === TextPacket::TYPE_TRANSLATION){
-                $pk->message = preg_replace("/%*(([a-z0-9_]+\.)+[a-z0-9_]+)/i", "%$1", $pk->message);
-            }
-            $pk->message .= self::THIN_TAG;
+        if($pk->type === TextPacket::TYPE_TRANSLATION){
+            $pk->message = preg_replace("/%*(([a-z0-9_]+\.)+[a-z0-9_]+)/i", "%$1", $pk->message);
         }
+        $pk->message .= self::THIN_TAG;
     }
 }
