@@ -46,8 +46,7 @@ class ChatThin extends PluginBase implements Listener{
      * @param DataPacketSendEvent $event
      */
     public function onDataPacketSendEvent(DataPacketSendEvent $event) : void{
-        $packets = method_exists($event, 'getPacket') ? [$event->getPacket()] : $event->getPackets();
-        foreach($packets as $_ => $pk){
+        foreach($event->getPackets() as $_ => $pk){
             if(!$pk instanceof TextPacket || $pk->type === TextPacket::TYPE_TIP || $pk->type === TextPacket::TYPE_POPUP || $pk->type === TextPacket::TYPE_JUKEBOX_POPUP)
                 continue;
 
