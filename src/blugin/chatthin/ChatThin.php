@@ -29,6 +29,7 @@ namespace blugin\chatthin;
 
 use pocketmine\event\Listener;
 use pocketmine\event\server\DataPacketSendEvent;
+use pocketmine\network\mcpe\protocol\AvailableCommandsPacket;
 use pocketmine\network\mcpe\protocol\TextPacket;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\TextFormat;
@@ -47,12 +48,19 @@ class ChatThin extends PluginBase implements Listener{
      */
     public function onDataPacketSendEvent(DataPacketSendEvent $event) : void{
         $pk = $event->getPacket();
-        if(!$pk instanceof TextPacket || $pk->type === TextPacket::TYPE_TIP || $pk->type === TextPacket::TYPE_POPUP || $pk->type === TextPacket::TYPE_JUKEBOX_POPUP)
-            return;
+        if($pk instanceof TextPacket){
+            if($pk->type === TextPacket::TYPE_TIP || $pk->type === TextPacket::TYPE_POPUP || $pk->type === TextPacket::TYPE_JUKEBOX_POPUP)
+                return;
 
-        if($pk->type === TextPacket::TYPE_TRANSLATION){
-            $pk->message = preg_replace("/%*(([a-z0-9_]+\.)+[a-z0-9_]+)/i", "%$1", $pk->message);
+            $pk->message = $this->toThin($pk->message);
+        }elseif($pk instanceof AvailableCommandsPacket){
+            foreach($pk->commandData as $name => $commandData){
+                $commandData->commandDescription = $this->toThin($commandData->commandDescription);
+            }
         }
-        $pk->message .= self::THIN_TAG;
+    }
+
+    public function toThin(string $str) : string{
+        return preg_replace("/%*(([a-z0-9_]+\.)+[a-z0-9_]+)/i", "%$1", $str) . self::THIN_TAG;
     }
 }
