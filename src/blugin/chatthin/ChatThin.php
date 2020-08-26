@@ -29,6 +29,7 @@ namespace blugin\chatthin;
 
 use pocketmine\event\Listener;
 use pocketmine\event\server\DataPacketSendEvent;
+use pocketmine\network\mcpe\protocol\AvailableCommandsPacket;
 use pocketmine\network\mcpe\protocol\TextPacket;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\TextFormat;
@@ -52,6 +53,10 @@ class ChatThin extends PluginBase implements Listener{
                     continue;
 
                 $pk->message = $this->toThin($pk->message);
+            }elseif($pk instanceof AvailableCommandsPacket){
+                foreach($pk->commandData as $name => $commandData){
+                    $commandData->description = $this->toThin($commandData->description);
+                }
             }
         }
     }
