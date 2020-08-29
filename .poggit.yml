@@ -1,7 +1,7 @@
---- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/Blugin/ChatThin-PMMP
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/Blugin/ChatThin
 build-by-default: true
 branches:
-  - stable
+  - master
 projects:
   ChatThin:
     path: ""
