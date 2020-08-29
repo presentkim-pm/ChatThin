@@ -52,7 +52,11 @@ class ChatThin extends PluginBase implements Listener{
                 if($pk->type === TextPacket::TYPE_TIP || $pk->type === TextPacket::TYPE_POPUP || $pk->type === TextPacket::TYPE_JUKEBOX_POPUP)
                     continue;
 
-                $pk->message = $this->toThin($pk->message);
+                if($pk->type === TextPacket::TYPE_TRANSLATION){
+                    $pk->message = $this->toThin($pk->message);
+                }else{
+                    $pk->message .= self::THIN_TAG;
+                }
             }elseif($pk instanceof AvailableCommandsPacket){
                 foreach($pk->commandData as $name => $commandData){
                     $commandData->description = $this->toThin($commandData->description);
