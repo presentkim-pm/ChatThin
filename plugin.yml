@@ -1,7 +1,7 @@
 ---
 name: ChatThin
 main: blugin\chatthin\ChatThin
-version: 1.3.0
+version: 1.3.1
 api: [3.0.0]
 authors: ['Blugin-team', 'PresentKim']
 description: Make all messages have the same font
