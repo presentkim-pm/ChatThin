@@ -1,10 +1,10 @@
---- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/Blugin/ChatThin
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/PresentKim/ChatThin
 build-by-default: true
 branches:
   - master
 projects:
   ChatThin:
-    path: ""
+    projectId: 7492
     icon: "icon.png"
     lint:
       phpstan: true
