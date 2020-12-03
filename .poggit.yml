@@ -4,7 +4,6 @@ branches:
   - main
 projects:
   ChatThin:
-    projectId: 7492
     icon: "icon.png"
     lint:
       phpstan: true
