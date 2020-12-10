@@ -1,9 +1,9 @@
 ---
 name: ChatThin
 main: kim\present\chatthin\ChatThin
-version: 1.4.0
+version: 1.4.1
 api: [ 3.0.0 ]
 author: 'PresentKim'
 description: Make all messages have the same font
-mcpe-protocol: [ 407, 408, 419 ]
+mcpe-protocol: [ 407, 408, 419, 422 ]
 ...
