@@ -34,6 +34,7 @@ use pocketmine\network\mcpe\protocol\TextPacket;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\TextFormat;
 
+use function count;
 use function is_dir;
 use function preg_replace;
 use function rmdir;
@@ -50,7 +51,7 @@ class ChatThin extends PluginBase implements Listener{
          * Delete the unnecessary data folder of this plugin for users.
          */
         $dataFolder = $this->getDataFolder();
-        if(is_dir($dataFolder) && empty(scandir($dataFolder))){
+        if(is_dir($dataFolder) && count(scandir($dataFolder)) <= 2){
             rmdir($dataFolder);
         }
     }
