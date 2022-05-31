@@ -58,13 +58,18 @@ class Main extends PluginBase implements Listener{
     public function onDataPacketSendEvent(DataPacketSendEvent $event) : void{
         foreach($event->getPackets() as $_ => $pk){
             if($pk instanceof TextPacket){
-                if($pk->type === TextPacket::TYPE_TIP || $pk->type === TextPacket::TYPE_POPUP || $pk->type === TextPacket::TYPE_JUKEBOX_POPUP)
-                    continue;
-
-                if($pk->type === TextPacket::TYPE_TRANSLATION){
-                    $pk->message = $this->toThin($pk->message);
-                }else{
-                    $pk->message .= self::THIN_TAG;
+                switch($pk->type){
+                    case TextPacket::TYPE_POPUP:
+                    case TextPacket::TYPE_JUKEBOX_POPUP:
+                    case TextPacket::TYPE_TIP:
+                        // Not apply to tip and popup
+                        break;
+                    case TextPacket::TYPE_TRANSLATION:
+                        $pk->message = $this->toThin($pk->message);
+                        break;
+                    default:
+                        $pk->message .= self::THIN_TAG;
+                        break;
                 }
             }elseif($pk instanceof AvailableCommandsPacket){
                 foreach($pk->commandData as $name => $commandData){
