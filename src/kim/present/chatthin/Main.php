@@ -35,7 +35,7 @@ use function rmdir;
 use function scandir;
 
 class Main extends PluginBase implements Listener{
-    public const THIN_TAG = TextFormat::ESCAPE . "　";
+    public const THIN_TAG = TextFormat::ESCAPE . "\u{3000}";
 
     public function onEnable() : void{
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
