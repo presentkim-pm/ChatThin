@@ -21,6 +21,7 @@ declare(strict_types=1);
 
 namespace kim\present\chatthin;
 
+use kim\present\traits\removeplugindatadir\RemovePluginDataDirTrait;
 use pocketmine\event\Listener;
 use pocketmine\event\server\DataPacketSendEvent;
 use pocketmine\network\mcpe\protocol\AvailableCommandsPacket;
@@ -28,26 +29,15 @@ use pocketmine\network\mcpe\protocol\TextPacket;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\TextFormat;
 
-use function count;
-use function is_dir;
 use function preg_replace;
-use function rmdir;
-use function scandir;
 
 class Main extends PluginBase implements Listener{
+    use RemovePluginDataDirTrait;
+
     public const THIN_TAG = TextFormat::ESCAPE . "\u{3000}";
 
     public function onEnable() : void{
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
-
-        /**
-         * This is a plugin that does not use data folders.
-         * Delete the unnecessary data folder of this plugin for users.
-         */
-        $dataFolder = $this->getDataFolder();
-        if(is_dir($dataFolder) && count(scandir($dataFolder)) <= 2){
-            rmdir($dataFolder);
-        }
     }
 
     /**
