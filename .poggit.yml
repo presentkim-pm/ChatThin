@@ -1,0 +1,7 @@
+---
+branches:
+- main
+projects:
+  ChatThin:
+    path: ""
+...
