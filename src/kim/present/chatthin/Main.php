@@ -1,31 +1,25 @@
 <?php
 
-/*
+/**            __   _____
+ *  _ __ ___ / _| |_   _|__  __ _ _ __ ___
+ * | '__/ _ \ |_    | |/ _ \/ _` | '_ ` _ \
+ * | | |  __/  _|   | |  __/ (_| | | | | | |
+ * |_|  \___|_|     |_|\___|\__,_|_| |_| |_|
  *
- *  ____  _             _         _____
- * | __ )| |_   _  __ _(_)_ __   |_   _|__  __ _ _ __ ___
- * |  _ \| | | | |/ _` | | '_ \    | |/ _ \/ _` | '_ ` _ \
- * | |_) | | |_| | (_| | | | | |   | |  __/ (_| | | | | | |
- * |____/|_|\__,_|\__, |_|_| |_|   |_|\___|\__,_|_| |_| |_|
- *                |___/
+ * @author  ref-team
+ * @link    https://github.com/refteams
  *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU Lesser General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
+ *  &   ／l、
+ *    （ﾟ､ ｡ ７
+ *   　\、ﾞ ~ヽ   *
+ *   　じしf_, )ノ
  *
- * @author  Blugin team
- * @link    https://github.com/Blugin
- * @license https://www.gnu.org/licenses/lgpl-3.0 LGPL-3.0 License
- *
- *   (\ /)
- *  ( . .) ♥
- *  c(")(")
+ * @noinspection PhpUnused
  */
 
 declare(strict_types=1);
 
-namespace blugin\chatthin;
+namespace kim\present\chatthin;
 
 use pocketmine\event\Listener;
 use pocketmine\event\server\DataPacketSendEvent;
@@ -40,7 +34,7 @@ use function preg_replace;
 use function rmdir;
 use function scandir;
 
-class ChatThin extends PluginBase implements Listener{
+class Main extends PluginBase implements Listener{
     public const THIN_TAG = TextFormat::ESCAPE . "　";
 
     public function onEnable() : void{
