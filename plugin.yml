@@ -1,7 +1,7 @@
 ---
 name: ChatThin
 main: kim\present\chatthin\Main
-version: 1.5.0
+version: 1.6.0
 api: [ 5.0.0 ]
 author: PresentKim
 description: Make all messages have the same font
