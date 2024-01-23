@@ -29,8 +29,6 @@ use pocketmine\network\mcpe\protocol\TextPacket;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\TextFormat;
 
-use function preg_replace;
-
 class Main extends PluginBase implements Listener{
     use RemovePluginDataDirTrait;
 
@@ -46,7 +44,7 @@ class Main extends PluginBase implements Listener{
      * @param DataPacketSendEvent $event
      */
     public function onDataPacketSendEvent(DataPacketSendEvent $event) : void{
-        foreach($event->getPackets() as $_ => $pk){
+        foreach($event->getPackets() as $pk){
             if($pk instanceof TextPacket){
                 switch($pk->type){
                     case TextPacket::TYPE_POPUP:
@@ -62,7 +60,7 @@ class Main extends PluginBase implements Listener{
                         break;
                 }
             }elseif($pk instanceof AvailableCommandsPacket){
-                foreach($pk->commandData as $name => $commandData){
+                foreach($pk->commandData as $commandData){
                     $commandData->description = $this->toThin($commandData->description);
                 }
             }
