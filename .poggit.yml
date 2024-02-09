@@ -1,6 +1,6 @@
 ---
 branches:
-- main
+  - main
 projects:
   ChatThin:
     path: ""
