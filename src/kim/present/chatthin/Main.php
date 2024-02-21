@@ -27,7 +27,7 @@ declare(strict_types=1);
 
 namespace kim\present\chatthin;
 
-use kim\present\traits\removeplugindatadir\RemovePluginDataDirTrait;
+use kim\present\removeplugindatafolder\PluginDataFolderEraser;
 use pocketmine\event\Listener;
 use pocketmine\event\server\DataPacketSendEvent;
 use pocketmine\network\mcpe\protocol\AvailableCommandsPacket;
@@ -38,11 +38,11 @@ use pocketmine\utils\TextFormat;
 use function preg_replace;
 
 class Main extends PluginBase implements Listener{
-	use RemovePluginDataDirTrait;
 
 	public const THIN_TAG = TextFormat::ESCAPE . "\u{3000}";
 
 	public function onEnable() : void{
+		PluginDataFolderEraser::erase($this);
 		$this->getServer()->getPluginManager()->registerEvents($this, $this);
 	}
 
