@@ -39,43 +39,39 @@ use function preg_replace;
 
 class Main extends PluginBase implements Listener{
 
-	public const THIN_TAG = TextFormat::ESCAPE . "\u{3000}";
+    public const THIN_TAG = TextFormat::ESCAPE . "\u{3000}";
 
-	public function onEnable() : void{
-		PluginDataFolderEraser::erase($this);
-		$this->getServer()->getPluginManager()->registerEvents($this, $this);
-	}
+    public function onEnable() : void{
+        PluginDataFolderEraser::erase($this);
+        $this->getServer()->getPluginManager()->registerEvents($this, $this);
+    }
 
-	/**
-	 * @priority HIGHEST
-	 *
-	 * @param DataPacketSendEvent $event
-	 */
-	public function onDataPacketSendEvent(DataPacketSendEvent $event) : void{
-		foreach($event->getPackets() as $pk){
-			if($pk instanceof TextPacket){
-				switch($pk->type){
-					case TextPacket::TYPE_POPUP:
-					case TextPacket::TYPE_JUKEBOX_POPUP:
-					case TextPacket::TYPE_TIP:
-						// Not apply to tip and popup
-						break;
-					case TextPacket::TYPE_TRANSLATION:
-						$pk->message = $this->toThin($pk->message);
-						break;
-					default:
-						$pk->message .= self::THIN_TAG;
-						break;
-				}
-			}elseif($pk instanceof AvailableCommandsPacket){
-				foreach($pk->commandData as $commandData){
-					$commandData->description = $this->toThin($commandData->description);
-				}
-			}
-		}
-	}
+    /**
+     * @priority HIGHEST
+     *
+     * @param DataPacketSendEvent $event
+     */
+    public function onDataPacketSendEvent(DataPacketSendEvent $event) : void{
+        foreach($event->getPackets() as $pk){
+            if($pk instanceof TextPacket){
+                $pk->message = match ($pk->type) {
+                    TextPacket::TYPE_POPUP,
+                    TextPacket::TYPE_JUKEBOX_POPUP,
+                    TextPacket::TYPE_TIP         => $pk->message,
 
-	public function toThin(string $str) : string{
-		return preg_replace("/%*(([a-z0-9_]+\.)+[a-z0-9_]+)/i", "%$1", $str) . self::THIN_TAG;
-	}
+                    TextPacket::TYPE_TRANSLATION => $this->toThin($pk->message),
+
+                    default                      => $pk->message . self::THIN_TAG
+                };
+            }elseif($pk instanceof AvailableCommandsPacket){
+                foreach($pk->commandData as $commandData){
+                    $commandData->description = $this->toThin($commandData->description);
+                }
+            }
+        }
+    }
+
+    public function toThin(string $str) : string{
+        return preg_replace("/%*(([a-z0-9_]+\.)+[a-z0-9_]+)/i", "%$1", $str) . self::THIN_TAG;
+    }
 }
